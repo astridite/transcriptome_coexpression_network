@@ -1,6 +1,9 @@
-## Transcriptome co-expression network
+## Transcriptome co-expression network 
+
 These scripts are the precursor to creating a gene co-expression network in cytoscape using timeseries transcriptomic data, 
 originally from Xerophyta schlechteri (FKA Xerophyta viscosa - network_data_eg.txt). 
+
+Clone this repo to your local machine and keep it in its own folder. Run the following scripts in RStudio as is with the network_data_eg.txt gene expression data set to get a feel for them, and then replace this file with your own gene expression data (all replicates) once you are au fair. 
 
 Script 1 (pearson_timeseries_1_with_astrids_notes.R) creates a pearson correlation matrix for the timecourse data 
 (uses FPKM/TPM of all biological replicates in the correlation) and allows you to determine a cutoff value (pearson 
