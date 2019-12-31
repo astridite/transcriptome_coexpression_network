@@ -11,7 +11,7 @@ my.data.cor <- cor(my.data, method="pearson") #pearson correlation
 diag(my.data.cor) = 0
 
 #replace "0.96" by the desired threshold value
-cutoff= 0.2 #set deliberately low to ensure that script is working
+cutoff= 0.2 #set deliberately low to ensure that script is working, but should be the cutoff value determined in part 1 of this exercise
 edgeList <- matrix(ncol=3, nrow=0)
 colnames(edgeList) = c("transcript1", "transcript2", "score")
 for (i in 1:(nrow(my.data.cor) - 1)) {
